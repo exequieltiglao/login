@@ -15,7 +15,7 @@ class ForgotPassword : AppCompatActivity() {
         val btnSend = findViewById<View>(R.id.btn_send) as Button
 
         btnSend.setOnClickListener {
-            val intent = Intent(this@ForgotPassword, ConfirmPasswordKt::class.java)
+            val intent = Intent(this@ForgotPassword, ConfirmPassword::class.java)
             startActivity(intent)
         }
 
