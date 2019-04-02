@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@id/account"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="150dp"
         android:hint="Username"
         android:drawableStart="@drawable/ic_person"
         android:drawablePadding="10dp"
@@ -62,28 +62,38 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:drawableStart="@drawable/ic_password"
+        android:drawableEnd="@drawable/ic_remove"
         android:drawablePadding="10dp"
         />
 
-
     <Button
         android:id="@+id/login"
-        android:layout_width="180dp"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/shapes_button"
+        android:layout_marginTop="80dp"
         android:text="Login"
+        android:background="#8387A5"
         android:textColor="#fff"
-        android:textSize="15sp" />
-
-    <Button
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shapes_button"
+        android:textAllCaps="false"
+        android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/forgot_password"
+        app:layout_constraintLeft_toLeftOf="parent"
         />
 
+    <Button
+        android:id="@+id/forgot_password"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textColor="#FFF"
+        android:background="#FF8387A5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintLeft_toRightOf="@id/login"
+        android:layout_marginTop="80dp"/>
 
 
 </android.support.constraint.ConstraintLayout>

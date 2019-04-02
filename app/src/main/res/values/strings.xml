@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SampleUI</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
